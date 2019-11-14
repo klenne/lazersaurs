@@ -1,0 +1,31 @@
+body{
+    font-size: 1.08rem;
+}
+
+p {
+	text-align: justify;
+	margin: 1rem 0;
+}
+
+
+footer{
+font-weight: bold;
+color:#DAE2C4;
+background-color: #3d340e;
+background-image: linear-gradient(90deg, #3d340e 25%, #c4a44d 100%);
+padding: 1rem;
+}
+
+.fadein {
+	animation-name: fadein;
+	animation-duration: 2s;
+	   }
+
+   @keyframes fadein {
+	   from {
+		   opacity: 0;
+	   }
+	   to {
+		   opacity: 1;
+	   }
+   }
