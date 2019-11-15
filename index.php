@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="icon" href="assets/media/img/icon.png">
     <link rel="stylesheet" href="assets/css/minify/style.min.css">
 
 
@@ -16,7 +16,9 @@
             lozad().observe();
         });
     </script>
-    </script>
+
+
+
     <title>Lazersaurs</title>
 </head>
 
@@ -24,7 +26,9 @@
     <header>
         <div class="space-between">
 
-            <h1>Lazersaurs</h1>
+            <a href="#">
+                <h1>Lazersaurs</h1>
+            </a>
             <nav id="menu">
                 <ul>
                     <li><a href="#produtos">Produtos</a></li>
@@ -250,12 +254,12 @@
                 <h2>Contato</h2>
             </header>
             <div class="centralize">
-                <form action="email.php" class="formulario" method="post">
+                <form  id="formulario"action="email.php" class="formulario" method="post">
                     <p> Envie uma mensagem preenchendo o formulário abaixo</p>
 
                     <div class="field">
                         <label for="nome">Seu Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        <input autofocus type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                     </div>
 
                     <div class="field">
@@ -281,7 +285,9 @@
         </section>
     </main>
     <footer>
-        <h2>Lazersaurs &#169 2090</h2>
+        <a href="#">
+            <h2>Lazersaurs &#169 2090</h2>
+        </a>
     </footer>
 </body>
 

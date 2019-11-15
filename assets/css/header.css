@@ -12,15 +12,20 @@ header {
 
 #menu {
     font-size: 1.5rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 
 #menu li {
     display: inline-flex;
     padding: 1rem;
+    transition: transform 0.8s;
 }
 
-#menu a {
+#menu li:hover {
+    transform: scale(1.4);
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -37,3 +42,58 @@ header h2 {
     text-align: center;
     padding: 1rem;
 }
+
+header h1 {
+    -webkit-animation: desliza;
+    animation: desliza 2s;
+}
+
+
+@keyframes desliza {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: initial
+    }
+}
+
+@-webkit-keyframes desliza {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: initial
+    }
+}
+
+
+
+#menu{
+
+-webkit-animation: aparece;
+animation: aparece 2s linear;
+
+}
+
+@keyframes aparece {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+@-webkit-keyframes aparece {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+
+
+
+
